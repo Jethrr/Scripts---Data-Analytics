@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains Jupyter Notebooks that perform data analytics on the Sleep Health and Lifestyle Dataset. The analysis explores various aspects of sleep health and lifestyle choices, using multiple data exploration techniques and visualization libraries. 
+This repository contains Jupyter Notebooks that perform data analytics on the Sleep Health and Lifestyle Dataset. The analysis explores various aspects of sleep health and lifestyle choices, using multiple data exploration techniques and visualization libraries.
 
 ## Dataset
 
@@ -11,17 +11,21 @@ The dataset used for this analysis is the [Sleep Health and Lifestyle Dataset](h
 ## Technologies Used
 
 - **Python Libraries:**
-  - [NumPy](https://numpy.org/): For numerical computations and data manipulation.
   - [Pandas](https://pandas.pydata.org/): For data manipulation and analysis.
-  - [Seaborn](https://seaborn.pydata.org/): For statistical data visualization.
+  - [NumPy](https://numpy.org/): For numerical computations and data manipulation.
+  - [SciPy](https://www.scipy.org/): Specifically, `scipy.stats` for statistical analysis.
   - [Matplotlib](https://matplotlib.org/): For plotting and visualizations.
+  - [Seaborn](https://seaborn.pydata.org/): For statistical data visualization.
 
 ## Features
 
 - **Data Exploration:** 
   - Basic statistics and data summary.
   - Identifying missing values and data cleaning.
-
+  
+- **Statistical Analysis:**
+  - Hypothesis testing and correlations using `scipy.stats`.
+  
 - **Data Visualization:** 
   - Distribution of sleep quality.
   - Correlation between lifestyle factors and sleep health.
@@ -35,9 +39,19 @@ To run the notebooks in this repository, you need to have the following installe
 
 - Python 3.x
 - Jupyter Notebook
-- Required Python libraries (NumPy, Pandas, Seaborn, Matplotlib)
+- Required Python libraries (Pandas, NumPy, SciPy, Matplotlib, Seaborn)
 
 You can install the required libraries using pip:
 
 ```bash
-pip install numpy pandas seaborn matplotlib
+pip install pandas numpy scipy matplotlib seaborn
+
+git clone https://github.com/Jethrr/Applied-AI.git
+cd Applied-AI
+jupyter notebook
+
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
